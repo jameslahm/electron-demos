@@ -10,10 +10,13 @@ app.once('ready',()=>{
         height:400,
         titleBarStyle:'hiddenInset',
         backgroundColor:'#111',
-        show:false
+        show:false,
+        webPreferences:{
+            nodeIntegration:true
+        }
     })
     window.loadURL(url.format({
-        pathname:path.join(__dirname+'index.html'),
+        pathname:path.join(__dirname,'index.html'),
         protocol:'file',
         slashes:true
     }))

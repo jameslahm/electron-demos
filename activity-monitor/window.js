@@ -1,6 +1,6 @@
 const os=require('os')
 var chart=null
-var lastMessureTimes=[]
+var lastMeasureTimes=[]
 
 function getCpuTimes(cpu){
     return [
@@ -18,7 +18,7 @@ function getDatasets(){
         const cpuData={
             data:getCpuTimes(cpu),
             backgroundColor:[
-                'rgba(255,99,132,1',
+                'rgba(255,99,132,1)',
                 'rgba(54,162,235,1)',
                 'rgba(255,206,86,1)'
             ]
@@ -30,7 +30,7 @@ function getDatasets(){
 
 function setLastMeasureTimes(cpus){
     for(let i=0;i<cpus.length;i++){
-        lastMessureTimes[i]=getCpuTimes(cpus[i])
+        lastMeasureTimes[i]=getCpuTimes(cpus[i])
     }
 }
 
@@ -48,7 +48,7 @@ function updateDatasets(){
 }
 
 function drawChart(){
-    chart=new chart($('.chart').getContext('2d'),{
+    chart=new Chart(document.getElementsByClassName('chart')[0].getContext('2d'),{
         type:'doughnut',
         data:{
             labels:[
