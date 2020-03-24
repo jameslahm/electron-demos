@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hash</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <script>
+        delete module.exports
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="./window.js"></script>
+</head>
+<body>
+    <div id="container" class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="hash-heading">Input</h3>
+                <textarea class="form-control text-input" id="text-input" rows="2" placeholder="Input text"></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="hash-heading">MD5</h3>
+                <pre id="md5-output" class="hash-output"> </pre>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="hash-heading">SHA-1</h3>
+                <pre id="sha1-output" class="hash-output"> </pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="hash-heading">SHA256</h3>
+                <pre id="sha256-output" class="hash-output"> </pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="hash-heading">SHA512</h3>
+                <pre id="sha512-output" class="hash-output"> </pre>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
